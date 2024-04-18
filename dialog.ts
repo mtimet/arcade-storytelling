@@ -227,8 +227,8 @@ namespace story {
      *
      * @param choices A list of player choices
      */
-    //% blockId=arcade_story_show_player_choice_list
-    //% block="show player choice list $choices"
+    //% blockId=arcade_story_show_player_choices
+    //% block="show player choices $choices"
     //% help=github:arcade-story/show-player-choices.md
     //% inlineInputMode=inline
     //% weight=80
