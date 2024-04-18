@@ -203,18 +203,13 @@ namespace story {
      * @param choice5 A choice to appear in the list of player choices
      */
     //% blockId=arcade_story_show_player_choices
-    //% block="show player choices $choice1 $choice2 ||$choice3 $choice4 $choice5"
+    //% block="show player choices $choices "
     //% help=github:arcade-story/show-player-choices.md
     //% inlineInputMode=inline
     //% weight=80
     //% blockGap=8
     //% group="Menu"
-    export function showPlayerChoices(choice1: string, choice2: string, choice3?: string, choice4?: string, choice5?: string) {
-        const choices = [choice1];
-        if (choice2) choices.push(choice2);
-        if (choice3) choices.push(choice3);
-        if (choice4) choices.push(choice4);
-        if (choice5) choices.push(choice5);
+    export function showPlayerChoices(choices: string[]) {
 
         _currentCutscene().showMenu(choices);
     }
