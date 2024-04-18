@@ -214,6 +214,7 @@ namespace story {
         if (choice2) choices.push(choice2);
         if (choice3) choices.push(choice3);
         if (choice4) choices.push(choice4);
+        if (choice5) choices.push(choice5);
 
         _currentCutscene().showMenu(choices);
     }
