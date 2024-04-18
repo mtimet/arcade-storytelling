@@ -219,7 +219,21 @@ namespace story {
         _currentCutscene().showMenu(choices);
     }
 
-
+    /**
+     * Shows a menu of choices for the player to make and pauses until the player
+     * makes a choice. The menu shown to the player uses the up, down, and A buttons,
+     * so make sure you ignore those button presses while the menu is open.
+     *
+     *
+     * @param choices A list of player choices
+     */
+    //% blockId=arcade_story_show_player_choice_list
+    //% block="show player choice list $choices"
+    //% help=github:arcade-story/show-player-choices.md
+    //% inlineInputMode=inline
+    //% weight=80
+    //% blockGap=8
+    //% group="Menu"
     export function showPlayerChoiceList(choices: string[]) {
         _currentCutscene().showMenu(choices);
     }
