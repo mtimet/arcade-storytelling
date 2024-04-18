@@ -219,6 +219,11 @@ namespace story {
         _currentCutscene().showMenu(choices);
     }
 
+
+    export function showPlayerChoiceList(choices: string[]) {
+        _currentCutscene().showMenu(choices);
+    }
+
     /**
      * Checks the last choice made by the player in a menu created by "show player choices".
      *
